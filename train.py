@@ -24,9 +24,9 @@ log_file = './training_log.csv'  # 保存训练日志的CSV文件路径
 
 
 # 创建数据集
-degraded_img_dir = 'C:/Users/Li Mu/Desktop/太空图像复原/1'
-real_img_dir = 'C:/Users/Li Mu/Desktop/GPU图像退化/data'
-psf_dir = 'C:/Users/Li Mu/Desktop/太空图像复原/mat'
+degraded_img_dir = ''
+real_img_dir = ''
+psf_dir = ''
 
 dataset = SpaceTelescopeDataset(degraded_img_dir, real_img_dir, psf_dir, transform=dataset.transform)
 print(dataset[0])
